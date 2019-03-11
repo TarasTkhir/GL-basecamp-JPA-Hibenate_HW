@@ -44,8 +44,7 @@ public class Workers {
     private String fullName;
 
 
-    @ManyToOne(fetch = FetchType.LAZY,
-            cascade = {CascadeType.ALL})
+    @ManyToOne(fetch = FetchType.LAZY)
     private Department departmentId;
 
     public enum Availability {
